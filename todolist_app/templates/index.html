@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    <title>Contact - Taskmate </title>
+{% endblock title %}
+
+{% block content %}
+    <div class="container">
+        <div class="row mt-5" >
+            <div class ="col-lg-4">
+
+                <img src="{% static 'images/stickynotes.jpg' %}" alt = "Notes" class="rounded-lg shadow-sm" width="360" height="250" >
+            </div>
+
+            <div class ="col-lg-4">
+                <img src="{% static 'images/lauraunsplash.jpg' %}" alt = "Notes" class="rounded-lg shadow-sm" width="360" height="250" >
+            </div>
+
+            <div class ="col-lg-4">
+                <img src="{% static 'images/stickynotes.jpg' %}" alt = "Notes" class="rounded-lg shadow-sm" width="360" height="250" >
+            </div>
+        </div>
+        <div class="row mt-5">
+        <div class="col-md-10 offset-md-1">
+            <div style="text-align: center;"><p class="h1 text-primary">Quic and Easy To Use, Anytime, Anywhere</p></div>
+            <div style="text-align: center;"><p class="h2">"Plan Your Day Better, Get Your LIfe Organized</p></div>
+            <div style="text-align: center;"><p class="h5">TASKMATE Lets You keep Track Of Your Task In One Place</p></div>
+
+            <div style="text-align: center;"><a href="{% url 'todolist' %}"><button type="button" class="btn btn-primary btn-lg mt-3 shadow">Lets Get Started</button></a></div>
+
+        </div>
+        </div>
+    </div>
+{% endblock content %}
